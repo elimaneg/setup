@@ -1,0 +1,6 @@
+ECMUSER=ecmusr
+systemctl enable docker.service
+systemctl start docker.service
+systemctl status docker.service
+groupadd docker
+sudo usermod -aG docker $ECMUSER
